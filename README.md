@@ -1,6 +1,6 @@
 # code_clause_internship
 
-#TASK 1:Churn Prediction in Telecom Industry using Logistic Regression
+# TASK 1:Churn Prediction in Telecom Industry using Logistic Regression
 
 **Business Problem Overview**
 In the telecom industry, customers are able to choose from multiple service providers and actively switch from one operator to another. In this highly competitive market, the telecommunications industry experiences an average of 15-25% annual churn rate. Given the fact that it costs 5-10 times more to acquire a new customer than to retain an existing one, customer retention has now become even more important than customer acquisition.For many incumbent operators, retaining high profitable customers is the number one business goal. To reduce customer churn, telecom companies need to predict which customers are at high risk of churn.
@@ -22,7 +22,7 @@ DATASET FOR TASK 1: data.csv
 TOOL FOR TASK 1:colab
 
 
-#TASK 2:Market Basket Analysis in Python using Apriori Algorithm
+# TASK 2:Market Basket Analysis in Python using Apriori Algorithm
 
 
 First Task: Implement the Apriori algorithm to find all frequent patterns under different settings of the minimum frequency (minimum support/#transactions). Vary the minimum frequency minFreq as 0.0001, 0.0002, 0.0003, 0.0004 and 0.0005. Report the number of frequent patterns, as well as the number of size-K frequent patterns for each size with at least one frequent pattern, under each setting of minFreq.
@@ -33,7 +33,7 @@ Market Basket Analysis using Apriori Algorithm on grocery data for generating fr
 DATASET FOR TASK 2: trans.txt,item_purchased.csv
 TOOL FOR TASK2:colab
 
-#TASK3(golden project): Building a Resume Parser Using NLP(Spacy) and Machine Learning
+# TASK3(golden project): Building a Resume Parser Using NLP(Spacy) and Machine Learning
 
 What does a resume parser do?
 
@@ -42,7 +42,7 @@ We will using Natural language processing in order to get the results accurately
 
 The purpose of this project is to use the power of Natural Language Processing to distinguish sections and keywords in a resume or position. You then have all the information to conduct an optimal analysis.
 
-#TASK4(Golden project):Price Recommendation for Online Sellers
+# TASK4(Golden project):Price Recommendation for Online Sellers
 Product pricing gets even harder at scale, considering just how many products are sold online. Clothing has strong seasonal pricing trends and is heavily influenced by brand names, while electronics have fluctuating prices based on product specs.
 
 Mercari, Japan’s biggest community-powered shopping app, knows this problem deeply. They’d like to offer pricing suggestions to sellers, but this is tough because their sellers are enabled to put just about anything, or any bundle of things, on Mercari's marketplace.
