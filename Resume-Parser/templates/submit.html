@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Resume Parser Using NLP(Spacy) and Machine Learning</title>
+</head>
+<style>
+    body{
+        font-family: 'Lucida Grande', monospace;
+        font-size: 25px;
+            
+background-image:url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FC4E03AQGlWIjMj7Vuwg%2Fprofile-displayphoto-shrink_800_800%2F0%2F1650000445227%3Fe%3D2147483647%26v%3Dbeta%26t%3D3F4Niu57YX2onGcaMpQjqBW5aL74t8UHeuwnl3SMpqM&imgrefurl=https%3A%2F%2Fin.linkedin.com%2Fin%2Fcodeclause&tbnid=_2Ed-aS-4E2naM&vet=12ahUKEwjDldeurPn8AhXP7zgGHdm2DXEQMygAegUIARCsAQ..i&docid=RN1pLCW00dzYmM&w=500&h=500&q=code%20clause&ved=2ahUKEwjDldeurPn8AhXP7zgGHdm2DXEQMygAegUIARCsAQ");  
+ 
+    }
+</style>
+<body>
+    <h1>Resume Parser</h1>
+    <h2>A simple resume parser web app that scores resumes based on keyword matches.<h2>
+    <p>by HARINISRI</p>
+    <a href="{{url_for('review')}}" >Review submissions</a>
+    <p>---------------------------------------------------------------</p>
+
+    <h2>Step 1: Enter Keywords</h2>
+    <p>Enter individually or as a space-separated list.</p>
+    <form method="POST" enctype="multipart/form-data">
+        <p><input type="text" name="kw"/></p>
+        <p><input type="submit" value="Submit"/></p>
+    </form>
+
+    <h4>Keywords</h4>
+        <ul>
+            {% for word in keywords %}
+                <li><input type='hidden'>{{ word }}</li>
+            {% endfor %}
+        </ul>
+        <form method="POST"enctype="multipart/form-data">
+            <input type="submit" name="r" value="Reset"/>
+        </form>
+
+    <p>---------------------------------------------------------------</p>
+    <h2>Step 2: Upload Resume (.pdf only)</h2>
+    <form method='POST' enctype='multipart/form-data'>
+        {{form.hidden_tag()}}
+        {{form.file()}}
+        {{form.submit()}}
+        <p>{{ uploadResult }}</p>
+    </form>
+
+    <p>---------------------------------------------------------------</p>
+    <h2>Step 3: Parse and Score Resume</h2>
+    <form method='POST' enctype='multipart/form-data'>
+        <input type="submit" name="p" value="Parse"/>
+        <p>{{ errorMessage }}</p>
+        <p>{{ scoreMessage }}</p>
+        <p>{{ matchesMessage }}</p>
+    </form>
+
+</body>
+<br><br><br>
+</html>

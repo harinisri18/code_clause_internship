@@ -1,0 +1,16 @@
+
+0.0%		
+	FILEPATH: c:\Users\HP\OneDrive\Documents\codeclause\Resume-Parser\static/files\sample_resume.pdf		
+	KEYWORDS: ['programming', 'harinisri', 'projects']		
+	MATCHES: []		
+
+0.0%		
+	FILEPATH: c:\Users\HP\OneDrive\Documents\codeclause\Resume-Parser\static/files\sample_resume.pdf		
+	KEYWORDS: ['programming', 'harinisri', 'projects']		
+	MATCHES: []		
+
+0.0%		
+	FILEPATH: c:\Users\HP\OneDrive\Documents\codeclause\Resume-Parser\static/files\harinisri_resume.pdf		
+	KEYWORDS: ['harinisri', 'programming', 'projects']		
+	MATCHES: []		
+
