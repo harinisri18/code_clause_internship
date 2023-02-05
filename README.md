@@ -49,7 +49,8 @@ Mercari, Japan’s biggest community-powered shopping app, knows this problem de
 
 In this Mercari’s challenging you to build an algorithm that automatically suggests the right product prices. You’ll be provided user-inputted text descriptions of their products, including details like product category name, brand name, and item condition.
 
-DATASET FOR TASK4:train.tsv,test.tsv
+DATASET FOR TASK4:https://www.kaggle.com/competitions/mercari-price-suggestion-challenge/data
+train.tsv,test.tsv
 TOOL FOR TASK4:colab
 
 
